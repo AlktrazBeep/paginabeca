@@ -11,9 +11,9 @@ import { VentajasImplantesSubComponent } from './site/pages/ventajas-implantes-s
 
 const routes:Routes=[
   { path:'', component: HomeComponent, pathMatch:'full'},
+  // { path:'send-msj', component: SendMsjComponent},
   { path:'prices', component: PricesComponent},
-  { path:'send-msj', component: SendMsjComponent},
-  { path:'frecQ', component: FrecQComponent},
+  { path:'faqs-implanon', component: FrecQComponent},
   { path:'mitos-implantes-sub', component: MitosImplantesSubComponent},
   { path:'ventajas-implantes-sub', component: VentajasImplantesSubComponent},
 
@@ -26,7 +26,7 @@ const routes:Routes=[
   ],
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes,{useHash: true})
   ],
   exports:[
     RouterModule

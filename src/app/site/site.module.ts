@@ -10,6 +10,7 @@ import { FrecQComponent } from './pages/frec-q/frec-q.component';
 import { MitosImplantesSubComponent } from './pages/mitos-implantes-sub/mitos-implantes-sub.component';
 import { VentajasImplantesSubComponent } from './pages/ventajas-implantes-sub/ventajas-implantes-sub.component';
 import { FormsModule } from '@angular/forms';
+import { ImplantesPageComponent } from './pages/implantes-page/implantes-page.component';
 
 
 
@@ -21,6 +22,7 @@ import { FormsModule } from '@angular/forms';
     FrecQComponent,
     MitosImplantesSubComponent,
     VentajasImplantesSubComponent,
+    ImplantesPageComponent,
     
   ],
   imports: [

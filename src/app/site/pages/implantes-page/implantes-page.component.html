@@ -7,34 +7,43 @@
         </div>
     </div>
     <div class="layout-content">
-        <section class="mx-5 mb-5">
+        <section class="mx-5">
             <div class="row m-0 justify-content-center p-0">
-                <div class="col-12 mb-3 text-center">
-                    <h2>Bienvenida</h2>
-                    <h3>Soy la Dra. Rebeca para ayudarte en:</h3>
-                </div>
+                <h2>Controla tu fertilidad con seguridad</h2>
                 <div class="col-12">
-                    <div class="row justify-content-center">
-                        <ul>
-                            <li><h4>Venta y colocación de <strong>Implante Subdérmico</strong> .</h4></li>
-                            <li><h4>Terapia de <strong>Dermapen</strong> o también llamado <strong>Microneedling</strong>.</h4></li>
-                            <li><h4>Eliminación total de varices <strong>Escleroterapia</strong>.</h4></li>
-                            <li><h4>Aplicación de<strong>Ácido Hialurónico</strong>.</h4></li>
-                            <li><h4>Reducción de arrugas y líneas de expresión con <strong>Botox</strong>.</h4></li>
-                        </ul>
+                    <div class="row justify-content-center animate__animated animate__fadeIn">
+                        <p>Los implantes subdérmicos son un método anticonceptivo seguro y efectivo que se colocan debajo de la piel del brazo.</p>
                     </div>
                 </div>
-                <h4 >Más información en <a routerLink="/prices">Productos y Servicios</a></h4>
+                <div class="col-12">
+                    <div class="row justify-content-center animate__animated animate__fadeIn">
+                        <p>Algunos de los <strong>beneficios de usar implantes subdérmicos</strong> incluyen:</p>
+                    </div>
+                </div>
                 
+                <!-- BENEFICIOS -->
+                <div class="card mb-2 col-12 col-md-4 mx-2 p-0 animate__animated animate__fadeIn" *ngFor="let beneficio of beneficios">
+                    <div class="card-header">
+                        {{beneficio.beneficio}}
+                        <span class="material-symbols-outlined ">
+                                <span class="material-symbols-outlined">
+                                    {{beneficio.logo}}    
+                                </span>
+                        </span>
+                    </div>
+                    <div class="card-body">
+                      <blockquote class="blockquote mb-0">
+                        <p class="quote">{{beneficio.justify}}</p>
+                      </blockquote>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="mx-5 mt-2">
-            <div class="row mb-2 justify-content-center">
-                <div class="col-12 text-center">
-                    <h3>Si estas interesada aquí te doy más información</h3>
-                    <h3>Contestaré a la brevedad en mis redes.</h3>
-                </div>
+            <div class="row m-0 justify-content-center">
+                <h3>Si estas interesad@ en como y donde conseguirlos aquí te doy información</h3>
+                <h3>contestaré a la brevedad en mis redes.</h3>
                 <div class="col-12">
                     <div class="row">
                         <div class="col-5">
@@ -47,7 +56,7 @@
                             </strong></span></div></div>
                             <div class="row"><div class="col-12"><span><strong>Contactarme por mis redes sociales</strong></span></div></div>
                             <div class="row"><div class="col-12"><span><strong>
-                                <a href="https://www.facebook.com/marketplace/item/620767923538137/" target="_blank"><i class="bi bi-facebook" style="font-size: 25px;"></i></a>
+                                <a href="https://www.facebook.com/marketplace/item/855889592286184/" target="_blank"><i class="bi bi-facebook" style="font-size: 25px;"></i></a>
                             </strong></span></div></div>
                             <!-- <div class="row"><div class="col-12"><span><strong>
                                 <p>O escribeme en a través de mi sitio web</p>
