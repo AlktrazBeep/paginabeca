@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --secondary-color:#40215e;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(1, 130, 125);
+}
+
+.click{
+    cursor: pointer;
+}

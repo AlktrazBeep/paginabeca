@@ -1,0 +1,17 @@
+<div class="card text-white floating-card bg-info mb-3  animate__animated animate__fadeIn" style="max-width: 18rem;" *ngIf="opinionActual && !close">
+    
+    <div class="card-header" style="display: flex;">Reseñas
+        <div class="col justify-content-end" style="display: flex;" (click)="closeCard()">
+            <div class="row"><i class="bi bi-x-circle click"></i></div>
+        </div>
+    </div>
+        
+    <div class="card-body">
+      <h5 class="card-title">{{opinionActual.nombre}}</h5>
+      <p class="card-text">{{opinionActual.opinion}}</p>
+    </div>
+</div>
+
+<div class="floating-card animate__animated animate__bounceInRight" *ngIf="close" (click)="openCard()">
+    <i class="bi bi-flower1 click" style="font-size: 50px;color: var(--secondary-color);"></i>
+</div>

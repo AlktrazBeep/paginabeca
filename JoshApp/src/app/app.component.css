@@ -1,0 +1,15 @@
+.logo{
+    display: flex;
+    box-shadow: 5px 5px 5px rgb(106, 133, 142);
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(1, 130, 125);
+}
+
+.footer{
+    height: 50px;
+    background-color: var(--secondary-color);
+}

@@ -1,0 +1,6 @@
+.floating-card{
+    position: fixed;
+    display: block;
+    z-index: 9999;
+    top: 50%;
+}

@@ -1,0 +1,39 @@
+<main class="pt-5">
+    <div class="row m-0 justify-content-center">
+        <div class="col-9">
+            <div class="bg-danger" *ngIf="alert!='se envió tu mensaje'">{{alert}}</div>
+            <div class="bg-success" *ngIf="alert=='se envió tu mensaje'">{{alert}}</div>
+            <input id="email" type="text" class="form-control" placeholder="Email"  aria-describedby="basic-addon1" required 
+            [(ngModel)]="mensaje.email">
+            <br>
+            <input type="text" class="form-control" placeholder="Celular" aria-describedby="basic-addon1"
+            [(ngModel)]="mensaje.number">
+            <br>
+            <input type="text" class="form-control" placeholder="Nombre" aria-describedby="basic-addon1" required
+            [(ngModel)]="mensaje.name">
+            <br>
+            <!-- MENSAJE -->
+            <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Mensaje</span>
+                </div>
+                <textarea class="form-control" aria-label="With textarea" [(ngModel)]="mensaje.msj"></textarea>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+                <button type="button" class="btn btn-success" (click)="sendData()">Enviar</button>
+            </div>
+
+            <hr>
+        </div>
+    </div>
+    <!-- OTRAS PAGINAS -->
+    <section class="mx-5 mt-2">
+        <div class="row m-0">
+            <div class="col-12"><h3>También te puede interesar</h3></div>
+            <div class="col-12"><a routerLink="../frecQ"><p><strong>Preguntas frecuentes</strong></p></a></div>
+            <div class="col-12"><a routerLink="../mitos-implantes-sub"><p><strong>Mitos de sobre los implantes subérmicos</strong></p></a></div>
+            <div class="col-12"><a routerLink="../ventajas-implantes-sub"><p><strong>Ventajas de los implantes subdérmicos</strong></p></a></div>
+        </div>
+    </section>
+</main>

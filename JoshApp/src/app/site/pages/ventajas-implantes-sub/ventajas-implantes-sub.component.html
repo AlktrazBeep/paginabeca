@@ -1,0 +1,23 @@
+<main class="pt-5">
+    <section class="mx-5">
+        <h1 class="mb-5">Ventajas de los implantes subdérmicos</h1>
+        
+
+        <ul class="list-group ">
+            <li class="list-group-item animate__animated animate__fadeIn" *ngFor="let ven of ventajas; let index=index">
+                <span class="badge badge-secondary badge-pill">{{index +1 }}</span>
+                {{ven.vent}}
+            </li>
+        </ul>
+    </section>
+    <!-- OTRAS PAGINAS -->
+    <hr>
+    <section class="mx-5 mt-2">
+        <div class="row m-0">
+            <div class="col-12"><h3>También te puede interesar</h3></div>
+            <div class="col-12"><a routerLink="../frecQ"><p><strong>Preguntas frecuentes</strong></p></a></div>
+            <div class="col-12"><a routerLink="../mitos-implantes-sub"><p><strong>Mitos de sobre los implantes subérmicos</strong></p></a></div>
+            <div class="col-12"><a routerLink="../ventajas-implantes-sub"><p><strong>Ventajas de los implantes subdérmicos</strong></p></a></div>
+        </div>
+    </section>
+</main>
